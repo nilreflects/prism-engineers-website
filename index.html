@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prism Engineers and Construction - Premier engineering and construction company specializing in residential, commercial, and industrial projects. Quality craftsmanship and innovative building solutions.">
+    <meta name="keywords" content="construction company, engineering, building contractor, residential construction, commercial construction, renovation, remodeling, prism engineers">
+    <meta name="author" content="Prism Engineers and Construction">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://prismengineers.com/">
+    <meta property="og:title" content="Prism Engineers and Construction - Building Excellence">
+    <meta property="og:description" content="Premier engineering and construction company specializing in residential, commercial, and industrial projects.">
+    <meta property="og:image" content="https://prismengineers.com/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://prismengineers.com/">
+    <meta property="twitter:title" content="Prism Engineers and Construction - Building Excellence">
+    <meta property="twitter:description" content="Premier engineering and construction company specializing in residential, commercial, and industrial projects.">
+    
+    <title>Prism Engineers and Construction - Building Excellence</title>
+    <link rel="canonical" href="https://prismengineers.com/">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">◆</span>
+                <span class="logo-text">PRISM</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <section id="home" class="hero">
+        <!-- Video Background -->
+        <div class="hero-video-wrapper">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="https://cdn.coverr.co/videos/coverr-construction-site-with-cranes-6525/1080p.mp4" type="video/mp4">
+            </video>
+            <div class="hero-video-overlay"></div>
+        </div>
+        
+        <!-- 3D Canvas -->
+        <canvas id="canvas3d"></canvas>
+        
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Engineering Excellence Since 2004</span>
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="hero-title-line">Building Dreams,</span>
+                <span class="hero-title-line">Engineering</span>
+                <span class="hero-title-line hero-title-highlight">Reality</span>
+            </h1>
+            
+            <p class="hero-description">
+                Prism Engineers and Construction delivers world-class engineering and construction 
+                solutions with precision, innovation, and unwavering commitment to excellence.
+            </p>
+            
+            <div class="hero-buttons">
+                <a href="#contact" class="hero-btn hero-btn-primary">
+                    <span>Start Your Project</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#projects" class="hero-btn hero-btn-secondary">
+                    <span>Explore Portfolio</span>
+                </a>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-number" data-count="500">0</div>
+                    <div class="hero-stat-label">Projects Completed</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number" data-count="20">0</div>
+                    <div class="hero-stat-label">Years Experience</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number" data-count="98">0</div>
+                    <div class="hero-stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 3D Image Gallery -->
+        <div class="hero-gallery">
+            <div class="gallery-item gallery-item-1">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80" alt="Construction Site" loading="eager">
+            </div>
+            <div class="gallery-item gallery-item-2">
+                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" alt="Bridge Construction" loading="eager">
+            </div>
+            <div class="gallery-item gallery-item-3">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80" alt="Modern Building" loading="eager">
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll to Explore</div>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="reveal">About Prism Engineers</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-image reveal-left">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80" alt="Engineering team at construction site" loading="lazy">
+                        <div class="about-image-overlay"></div>
+                    </div>
+                    <div class="about-text reveal-right">
+                        <p>With over two decades of experience, Prism Engineers and Construction has established itself as a leader in the engineering and construction industry. We specialize in delivering high-quality residential, commercial, and industrial projects.</p>
+                        <p>Our commitment to excellence, safety, and innovation sets us apart. Every project is executed with precision engineering, attention to detail, and a focus on exceeding client expectations.</p>
+                        <p>From concept to completion, we bring your vision to life with unmatched technical expertise and dedication.</p>
+                    </div>
+                </div>
+                <div class="stats reveal">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="500">0</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="20">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="98">0</span>
+                        <span class="stat-label">Client Satisfaction %</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Image Section -->
+    <section class="parallax-section">
+        <div class="parallax-image" style="background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920&q=80');"></div>
+        <div class="parallax-content reveal-scale">
+            <h2>Crafting Excellence Since 2004</h2>
+            <p>Every structure we build tells a story of dedication, innovation, and uncompromising quality. We don't just construct buildings—we create landmarks that stand the test of time.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="reveal">Featured Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80');">
+                        <div class="project-overlay">
+                            <span class="project-category">Commercial</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Modern Office Complex</h3>
+                        <p>50,000 sq ft commercial building with sustainable design and LEED certification</p>
+                        <span class="project-year">2023</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80');">
+                        <div class="project-overlay">
+                            <span class="project-category">Residential</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Luxury Residential Tower</h3>
+                        <p>25-story high-rise with premium amenities and panoramic city views</p>
+                        <span class="project-year">2023</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?w=800&q=80');">
+                        <div class="project-overlay">
+                            <span class="project-category">Industrial</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Industrial Warehouse</h3>
+                        <p>100,000 sq ft state-of-the-art logistics and distribution center</p>
+                        <span class="project-year">2024</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80');">
+                        <div class="project-overlay">
+                            <span class="project-category">Retail</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Shopping Mall Renovation</h3>
+                        <p>Complete modernization of 200,000 sq ft retail space with modern aesthetics</p>
+                        <span class="project-year">2024</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80');">
+                        <div class="project-overlay">
+                            <span class="project-category">Residential</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Contemporary Villa</h3>
+                        <p>Custom-designed luxury home with smart home integration and eco-friendly features</p>
+                        <span class="project-year">2023</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80');">
+                        <div class="project-overlay">
+                            <span class="project-category">Infrastructure</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Bridge Construction</h3>
+                        <p>Major infrastructure project connecting two city districts with modern design</p>
+                        <span class="project-year">2024</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Counter Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <div class="stat-card-number" data-count="500">0</div>
+                    <div class="stat-card-label">Projects</div>
+                    <div class="stat-card-description">Successfully Completed</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-card-number" data-count="50">0</div>
+                    <div class="stat-card-label">Million</div>
+                    <div class="stat-card-description">Square Feet Built</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-card-number" data-count="1000">0</div>
+                    <div class="stat-card-label">Clients</div>
+                    <div class="stat-card-description">Satisfied Worldwide</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-card-number" data-count="25">0</div>
+                    <div class="stat-card-label">Awards</div>
+                    <div class="stat-card-description">Industry Recognition</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="reveal">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Residential Construction</h3>
+                    <p>Custom homes, renovations, and additions built to your specifications</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Commercial Projects</h3>
+                    <p>Office buildings, retail spaces, and mixed-use developments</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏭</div>
+                    <h3>Industrial Construction</h3>
+                    <p>Warehouses, manufacturing facilities, and distribution centers</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Renovation & Remodeling</h3>
+                    <p>Transform existing spaces with modern upgrades and improvements</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📐</div>
+                    <h3>Design-Build</h3>
+                    <p>Integrated design and construction services for seamless execution</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h3>Project Management</h3>
+                    <p>Expert oversight ensuring on-time, on-budget delivery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="reveal">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <strong>📍 Address:</strong>
+                        <p>123 Construction Ave, Building City, BC 12345</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>📞 Phone:</strong>
+                        <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>✉️ Email:</strong>
+                        <p><a href="mailto:info@buildcraft.com">info@buildcraft.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>🕒 Hours:</strong>
+                        <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 2:00 PM</p>
+                    </div>
+                </div>
+                <form class="contact-form reveal-right" id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required aria-label="Your name">
+                    <input type="email" name="email" placeholder="Your Email" required aria-label="Your email">
+                    <input type="tel" name="phone" placeholder="Phone Number" aria-label="Phone number">
+                    <textarea name="message" placeholder="Tell us about your project" rows="5" required aria-label="Project details"></textarea>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Prism Engineers and Construction. All rights reserved.</p>
+            <p>Licensed & Insured | Engineering Excellence</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "prism-engineers-construction",
+  "version": "1.0.0",
+  "description": "Prism Engineers and Construction - Professional construction company portfolio website with 3D effects and scrollytelling",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "construction",
+    "engineering",
+    "portfolio",
+    "3d",
+    "scrollytelling"
+  ],
+  "author": "Prism Engineers and Construction",
+  "license": "MIT"
+}
