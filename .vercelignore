@@ -1,0 +1,7 @@
+# Ignore these files during deployment
+.git
+.vscode
+node_modules
+*.bat
+*.md
+.gitignore
